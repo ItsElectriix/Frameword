@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CrossOver</title>
+		<link rel="stylesheet" href="vendor/pickr.nano.min.css"/>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="background"></div>
+
+			<div class="crosshair-wrapper">
+				<div id="crosshair">
+					<img id="crosshairImg" alt="Crosshair" src="crosshairs/Actual/leupold-dot.png" draggable="false" onError="this.onerror=null;this.src='crosshairs/Actual/leupold-dot.png';" />
+					<div class="sight dot">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="settings">
+				<div class="settings-background"></div>
+
+				<div>
+					<div class="color-picker"></div>
+
+					<button id="select-crosshair-button">Choose Crosshair</button>
+
+				</div>
+
+				<label for="setting-sight">Sight</label>
+
+				<div class="setting-sight">
+					<label class="radio dot">
+					  <input name="radio" type="radio" value="dot" checked>
+					  <span>&bull;</span>
+					</label>
+					<label class="radio cross">
+					  <input name="radio" value="cross" type="radio">
+					  <span>&plus;</span>
+					</label>
+					<label class="radio off">
+					  <input name="radio" value="off" type="radio">
+					  <span>off</span>
+					</label>
+				</div>
+
+				<label for="setting-size">Size</label>
+				<div class="d-flex">
+					<input id="setting-size" type="range" min="5" max="100" step="1" value="100" />
+					<output id="output-size" for="setting-size">100</output><sup>%</sup>
+				</div>
+
+				<label for="setting-opacity">Opacity</label>
+				<div class="d-flex">
+					<input id="setting-opacity" type="range" min="0" max="100" step="1" />
+					<output id="output-opacity" for="setting-opacity">50</output><sup>%</sup>
+                </div>
+                
+                <button id="done-button">Save</button>
+            </div>
+        </div>
+            
+        <div id="settings-container">
+
+            <div id="settings-wrapper">
+
+                <div id="crosshair-chooser"></div>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr@1.7.4/dist/pickr.min.js" integrity="sha256-eT6FBz4u1lRoqKhtt2kBtSBvvoGu3h79ZXYtuGfzJc4=" crossorigin="anonymous"></script>
+        <script src="./crosshairs.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>

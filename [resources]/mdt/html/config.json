@@ -1,0 +1,12 @@
+{
+    "mdtName": "BJ MDT",
+    "weaponsAllowed": true,
+    "showNationality": true,
+    "additionalMarkers": {
+        "organisedcrime": {
+            "icon": "account_balance",
+            "tooltip": "Organised Crime",
+            "colourType": "warning"
+        }
+    }
+}

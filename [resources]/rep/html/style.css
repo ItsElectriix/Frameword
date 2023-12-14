@@ -1,0 +1,42 @@
+body {
+    height: calc(100vh - 16px);
+    overflow: hidden;
+}
+
+#spacer {
+    width: 100vw;
+    height: 35vh;
+    overflow: hidden;
+}
+
+#container {
+    width: 20vw;
+    position: absolute;
+    color: white;
+    font-family: Roboto;
+    font-size: 0.75vw;
+    background-color: rgba(26, 32, 53, 0.92);
+    border-radius: 0.5vw;
+    display: none;
+}
+
+#container > div:not(.vline) {
+    width: 10vw;
+    float: left;
+    text-align: center;
+}
+
+.vline {
+    border-left: solid 1px white;
+    height: 100%;
+    position: absolute;
+    left: calc(10vw - 1px);
+}
+
+#charPicture {
+    max-width: 8vw;
+    position: relative;
+    top: 1vh;
+    max-height: 8vw;
+    border: solid 3px black;
+}

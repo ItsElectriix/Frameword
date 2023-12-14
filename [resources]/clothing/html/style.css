@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.container {
+    height: 100vh;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+.clothing-menu-container {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 42vh;
+    background-color: rgb(44, 59, 83);
+    right: -25vw;
+}
+
+.clothing-menu-header {
+    position: relative;
+    height: 6vh;
+    width: 100%;
+    top: 2.2vh;
+}
+
+.clothing-menu-header-btn {
+    position: relative;
+    height: 55%;
+    top: 2.3vh;
+    background-color: rgb(68, 90, 124);
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 3.5vh;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-header-btn:hover {
+    background-color: #6d7c92;
+}
+
+.selected {
+    background-color: rgb(74, 146, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.clothing-menu-header-btn > p {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1vh;
+    letter-spacing: 0.1vh;
+}
+
+.clothing-menu-header-cameras {
+    position: absolute;
+    height: 5.5vh;
+    width: 100%;
+    top: -2vh;
+}
+
+.clothing-menu-header-camera-btn {
+    position: relative;
+    height: 55%;
+    top: 2.3vh;
+    background-color: rgb(68, 90, 124);
+    width: 33.33%;
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 3.4vh;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition: all 0.1s linear;
+}
+
+.selected-cam {
+    background-color: rgb(74, 146, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.clothing-menu-header-camera-btn:hover {
+    background-color: #6d7c92;
+}
+
+.clothing-menu-header-camera-btn > i {
+    font-size: 1.4vh;
+}
+
+.clothing-menu-roomOutfits-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 9vh;
+    height: 87vh;
+    width: 92%;
+    background-color: rgb(44, 59, 83);
+    overflow-y: scroll !important;
+}
+
+.clothing-menu-myOutfits-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 9vh;
+    height: 87vh;
+    width: 92%;
+    background-color: rgb(44, 59, 83);
+    overflow-y: scroll !important;
+}
+
+.clothing-menu-outfit-option-button {
+    position: relative;
+    text-align: center;
+    line-height: 4.8vh;
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+    top: 2.3vh;
+    background-color: rgb(68, 90, 124);
+    border-radius: 0.75vh;
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-outfit-option-button:hover {
+    background-color: #6d7c92;
+}
+
+.clothing-menu-outfit-option-button > p {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 0.1vh;
+    font-size: 1vh;
+}
+
+.clothing-menu-myOutfit-option-button {
+    position: absolute;
+    text-align: center;
+    line-height: 4.8vh;
+    width: 40%;
+    height: 40%;
+    left: 2vh;
+    top: 5.1vh;
+    background-color: rgb(68, 90, 124);
+    border-radius: 0.75vh;
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-myOutfit-option-button:hover {
+    background-color: #6d7c92;
+}
+
+.clothing-menu-myOutfit-option-button > p {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 0.1vh;
+    font-size: 1vh;
+}
+
+.clothing-menu-myOutfit-option-button-remove {
+    position: absolute;
+    text-align: center;
+    line-height: 4.8vh;
+    width: 40%;
+    height: 40%;
+    right: 2vh;
+    top: 5.1vh;
+    background-color: rgb(68, 90, 124);
+    border-radius: 0.75vh;
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-myOutfit-option-button-remove:hover {
+    background-color: #6d7c92;
+}
+
+.clothing-menu-myOutfit-option-button-remove > p {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 0.1vh;
+    font-size: 1vh;
+}
+
+.clothing-menu-character-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 9vh;
+    height: 87vh;
+    width: 92%;
+    background-color: rgb(44, 59, 83);
+    overflow-y: scroll !important;
+}
+
+.clothing-menu-clothing-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 9vh;
+    height: 90vh;
+    width: 92%;
+    background-color: rgb(44, 59, 83);
+    overflow-y: scroll !important;
+}
+
+.clothing-menu-extra-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 9vh;
+    height: 90vh;
+    width: 92%;
+    background-color: rgb(44, 59, 83);
+    overflow-y: scroll !important;
+}
+
+.clothing-menu-accessories-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 9vh;
+    height: 90vh;
+    width: 92%;
+    background-color: rgb(44, 59, 83);
+    overflow-y: scroll !important;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+    background-color: rgba(245, 245, 245, 0.089);
+}
+
+::-webkit-scrollbar {
+    width: 0.4vh;
+    background-color: rgba(245, 245, 245, 0.089);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(74, 146, 255);
+}
+
+.clothing-menu-option {
+    position: relative;
+    width: 100%;
+    height: 14%;
+    background-color: rgb(44, 59, 83);
+    margin-bottom: 1.5vh;
+}
+
+.clothing-menu-option-header {
+    color: white;
+    padding: 0.8vh;
+    width: 100%;
+    background-color: rgb(59, 78, 108);
+}
+
+.clothing-menu-option-header > p {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1vh;
+    letter-spacing: 0.1vh;
+}
+
+.clothing-menu-option-item {
+    position: relative;
+    float: left;
+    height: 50%;
+    width: 40%;
+    margin-left: 2.4vh;
+    margin-top: 2vh;
+}
+
+.clothing-menu-option-item-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70%;
+    width: 33%;
+    background-color: rgb(68, 90, 124);
+    color: #e9e9e9;
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 5px 0px 0px 5px;
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-option-item-left:hover {
+    background-color: #6d7c92;
+}
+
+.clothing-menu-option-item-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 70%;
+    width: 33%;
+    background-color: rgb(68, 90, 124);
+    color: #e9e9e9;
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-option-item-right:hover {
+    background-color: #6d7c92;
+}
+
+.item-number {
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    top: 2vh;
+    left: 5.75vh;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1vh;
+    letter-spacing: 0.1vh;
+    color: white;
+    outline: none;
+    transition: all 0.1s linear;
+}
+
+.item-number:focus {
+    border-bottom: 2px solid rgb(74, 146, 255);
+}
+
+.clothing-menu-option-item-header {
+    position: absolute;
+    bottom: 5vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8vh;
+    letter-spacing: 0.07vh;
+    color: white;
+}
+
+.clothing-menu-option-item-header > p {
+    font-family: sans-serif;
+    padding: 0.2vh;
+}
+
+.clothing-menu-option-buttons {
+    position: absolute;
+    bottom: 0.75vh;
+    width: 100%;
+    height: 2.5vh;
+    background: black;
+}
+
+.clothing-menu-option-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 33.33%;
+    background-color: rgb(68, 90, 124);
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-option-button:hover {
+    background-color: #6d7c92;
+}
+
+.clothing-menu-option-button > p {
+    line-height: 2.5vh;
+    font-size: 0.9vh;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.clothing-menu-save-outfit-name {
+    display: none;
+    position: relative;
+    width: 40vh;
+    height: 25vh;
+    background: #424953;
+    margin: 0 auto;
+    top: 30%;
+    border-radius: 0.7vh;
+}
+
+.clothing-menu-save-outfit-name-buttons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 17%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.clothing-menu-save-outfit-name-button {
+    position: relative;
+    background: rgb(68, 90, 124);
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 4vh;
+    transition: all 0.1s linear;
+}
+
+.clothing-menu-save-outfit-name-button:hover {
+    background: #6d7c92;
+}
+
+.clothing-menu-save-outfit-name-button > p {
+    font-family: sans-serif;
+    font-size: 1.1vh;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.clothing-menu-save-outfit-name-header {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    line-height: 5vh;
+}
+
+.clothing-menu-save-outfit-name-header > p {
+    font-family: sans-serif;
+    font-size: 1.5vh;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+#outfit-name {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    background: none;
+    border: none;
+    outline: none;
+    background: #292e36;
+    width: 60%;
+    height: 30%;
+    text-align: center;
+    border-bottom: 3px solid rgb(68, 90, 124);
+    transition: all 0.1s linear;
+}
+
+#outfit-name:focus {
+    border-bottom: 3px solid rgb(74, 146, 255);
+}
+
+#outfit-name {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.75vh;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#outfit-name::placeholder {
+    color: rgba(255, 255, 255, 0.404);
+    font-family: sans-serif;
+    font-size: 1.75vh;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.change-camera-buttons {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 7vh;
+    width: 20vh;
+}
+
+.change-camera-button {
+    position: relative;
+    height: 80%;
+    width: 50%;
+    float: left;
+    background: rgb(59, 78, 108);
+    text-align: center;
+    transition: 0.08s;
+}
+
+.change-camera-button:hover {
+    background: #6d7c92;
+}
+
+.change-camera-button > i {
+    font-size: 3vh;
+    color: white;
+    line-height: 5.5vh;
+}
+
+.change-camera-footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    background: rgb(44, 59, 83);
+    line-height: 1.5vh;
+}
+
+.change-camera-footer > p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.8vh;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1vh;
+}
+
+.item-slider {
+    position: absolute;
+    height: 60%;
+    top: 3vh;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(74, 146, 255);
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1vh;
+    letter-spacing: 0.1vh;
+    color: white;
+    outline: none;
+
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1.5vh;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+.item-slider:hover {
+    opacity: 1;
+}
+.item-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: rgb(74, 146, 255);
+    cursor: pointer;
+}
+.item-slider::-moz-range-thumb {
+    width: 1.5vh;
+    height: 1.5vh;
+    border: 0;
+    background: rgb(74, 146, 255);
+    cursor: pointer;
+}
+
+.clothing-menu-option-toggle {
+    z-index: 0;
+    display: none;
+    position: absolute;
+    right: 32vh;
+    top: 0vh;
+    width: 12vh;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8vh;
+    letter-spacing: 0.1vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle-open-button {
+    width: 2vh;
+    float: left;
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+    margin: 0;
+    -webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
+    background-color: rgb(44, 59, 83);
+    border-radius: 0.5vh 0 0 0.5vh;
+    font-size: 1.3vh;
+}
+
+.toggle-container {
+    background-color: rgb(44, 59, 83);
+}
+
+.toggle-container h2 {
+    padding: 0.5vh 1vh;
+    font-size: 0.6vh;
+}
+
+.clothing-menu-option-toggle.open {
+    right: 42vh;
+}
+
+.toggle-button {
+    position: relative;
+    height: 80%;
+    background: rgb(59, 78, 108);
+    text-align: center;
+    transition: 0.08s;
+}
+
+.toggle-button:hover {
+    background: #6d7c92;
+}
+
+.toggle-button > i {
+    font-size: 2.5vh;
+    line-height: 3.2vh;
+}

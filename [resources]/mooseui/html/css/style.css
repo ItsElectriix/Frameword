@@ -1,0 +1,336 @@
+.positive {
+    color: rgb(114, 204, 114);
+}
+
+.negative {
+    color: rgb(224, 50, 50);
+}
+
+body {
+    overflow: hidden;
+}
+
+.tempbg {
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+}
+
+.portrait {
+    background-image: url(../assets/pp.png);
+    /*background: #ffffff;*/
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+}
+
+/*#heal, #armor, #hunger, #thirst, #stamina, #voice {
+
+}*/
+
+#boxHeal, #boxArmor, #boxStamina, #boxHunger, #boxThirst, #boxVoice, #boxDrug, #boxStress, #boxHealth, #boxArmour {
+    transition: 0.2s ease;
+}
+
+.container {
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    bottom: 35px
+}
+
+.heal {
+    position: absolute;
+    left: 26px;
+    bottom: 70px;
+    width: 0px;
+    height: 10px;
+    padding: 0;
+    float: left;
+    transition: width 1.6s ease;
+}
+
+.healMove {
+    width: 140px;
+}
+
+.armor {
+    position: absolute;
+    left: 27px;
+    bottom: 54px;
+    width: 0px;
+    height: 10px;
+    transition: width 1.6s ease;
+}
+
+.armorMove {
+    width: 140px;
+}
+
+.boxbg {
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+}
+
+.drugbg {
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+}
+
+.icondrug {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 3;
+}
+
+.icondrug path {
+	color: white;
+    transform: scale(0.025);
+}
+
+#boxDrug {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 2px solid white;
+    height: 50px;
+    width: 50px;
+    bottom: -1px;
+}
+
+.hungerbg {
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+}
+
+.iconhunger {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 3;
+}
+
+#boxHunger {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 2px solid white;
+    height: 50px;
+    width: 50px;
+    bottom: -1px;
+}
+
+.thirstbg {
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+}
+
+#boxThirst {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 2px solid white;
+    height: 50px;
+    width: 50px;
+    bottom: -1px;
+}
+
+.iconthirst {
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.stressbg {
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+}
+
+#boxStress {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 2px solid white;
+    height: 50px;
+    width: 50px;
+    bottom: -1px;
+}
+
+.iconstress {
+    position: absolute;
+	color: white;
+	left: 10px;
+    bottom: 11px;
+    z-index: 2;
+}
+
+.staminabg {
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+    box-shadow: outset 0px 0px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+#boxStamina {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 2px solid white;
+    height: 50px;
+    width: 50px;
+    bottom: -1px;
+    display: block;
+}
+
+.iconstamina {
+    position: absolute;
+    z-index: 2;
+    left: 7.5px;
+    bottom: 6px;
+}
+
+.microphonebg, .healthbg, .armourbg {
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    box-shadow: inset 0px 0px 0px rgba(97, 191, 92, 0.0);
+}
+
+.microphoneSlider, #healthSlider, #armourSlider {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    bottom: -1px;
+    z-index: 2;
+    border-top: 2px solid white;
+    transition: all 0.5s ease;
+}
+
+.fas {
+	color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 3;
+}
+
+.fa-microphone {
+    left: 14px;
+}
+
+.fa-bullhorn {
+    left: 8px;
+}
+
+.fa-plus {
+    left: 12px;
+}
+
+.fa-shield-alt {
+    left: 10px;
+}
+
+.walkie {
+	background-image: url('https://cdn.bssecure.net/img/walkie.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 39px;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	bottom: 0;
+}
+
+.fa-mobile-alt {
+    left: 16px;
+}
+
+#microphonebg.active {
+    /*background: rgba(46, 196, 66, 0.4);*/
+    /*outline: 1px solid transparent;
+padding: 0.1px 0.1px;
+border: 2px solid #0198fa;*/
+    box-shadow: inset 0px 0px 10px 10px rgba(97, 191, 92, 1);
+}
+
+@keyframes pulse {
+    0% { box-shadow: unset; }
+    50% { box-shadow: rgba(230, 55, 90, 1) 0px 0px 10px 10px inset; }
+    100% { box-shadow: unset; }
+}
+
+@-webkit-keyframes pulse {
+    0% { box-shadow: unset; }
+    50% { box-shadow: rgba(230, 55, 90, 1) 0px 0px 10px 10px inset; }
+    100% { box-shadow: unset; }
+}
+
+.pulse {
+    -webkit-animation: pulse 3.0s linear infinite;
+    -moz-animation: pulse 3.0s linear infinite;
+    -ms-animation: pulse 3.0s linear infinite;
+    -o-animation: pulse 3.0s linear infinite;
+    animation: pulse 3.0s linear infinite;
+}
+
+#boxHeal {
+    position: absolute;
+    right: 300px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    bottom: 300px;
+    stroke-width: 6;
+    transition: all 1.4s ease-in-out;
+    background-color: '#FFEA82';
+}
+
+#boxArmor {
+    background: rgb(96, 136, 220);
+    border: solid 0.3px rgb(96, 136, 220);
+    border-radius: 180px;
+    border: -5px;
+}
+
+#mugshot {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    bottom: 35px;
+    height: 80px;
+    width: 80px;
+	background-image: url(http://llrp.bsndev.net/api/chars/15.jpg);
+	background-size: cover;
+	border-radius: 50%;
+}
+
+#healthBar svg {
+	transform: rotate(270deg) translateX(20px) translateY(-20px);
+}
+
+#armourBar svg {
+	transform: rotate(90deg) translateX(20px) translateY(-20px) scaleX(-1);
+}

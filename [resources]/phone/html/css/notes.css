@@ -1,0 +1,334 @@
+.note-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #f2f2f2;
+    overflow: hidden;
+}
+
+.note-header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+}
+
+#note-header-text {
+    position: absolute;
+    top: 5vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: black;
+}
+
+#note-header-name {
+    position: absolute;
+    top: 8vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.4vh;
+    color: rgba(26, 26, 26, 0.842);
+}
+
+.note-list {
+    position: absolute;
+    width: 99%;
+    background-color: rgb(255, 255, 255);
+    height: 39.5vh;
+    top: 12vh;
+    left: .1vh;
+    /*border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
+    box-shadow: 0px 0 1px .5px rgba(0, 0, 0, 0.233);*/
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+}
+
+.note-del-confirm {
+    display: none;
+}
+
+.note-list::-webkit-scrollbar {
+    display: none;
+}
+
+.note {
+    position: relative;
+    width: 95%;
+    height: auto;
+    min-height: 4vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: .8vh;
+    border-radius: .5vh;
+    box-shadow: 0 0 1vh 0.1vh rgba(0, 0, 0, 0.15);
+    margin-top: .6vh;
+    text-align: center;
+    padding-top: .8vh;
+    padding-bottom: .8vh;
+    transition: .05s ease-in-out;
+}
+
+/*.note {
+    position: relative;
+    background-color: #1af0ff;
+    height: auto;
+    min-height: 4vh;
+    width: 90%;
+    transition: .05s ease-in-out;
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+    text-align: center;
+    padding-top: .8vh;
+    padding-bottom: .8vh;
+}*/
+
+.note > p {
+    margin-top: 1.5vh;
+    padding-bottom: 1vh;
+    font-family: 'Samsung Sans Regular';
+    color: black;
+    max-width: 25vh;
+}
+
+/*.note:hover {
+    background-color: #75f6ff;
+    transition: .05s ease-in-out;
+}*/
+
+.note-sender {
+    position: relative;
+    font-family: 'Samsung Sans Bold';
+    font-size: 1.6vh;
+}
+
+.note-info {
+    font-family: 'Samsung Sans Bold';
+    font-size: 0.8vh;
+}
+
+.note-cont {
+    width: 70%;
+    border-right: solid 1px #333;
+}
+
+.create-note {
+    position: absolute;
+    width: 100%;
+    height: 4.2vh;
+    top: 52.6vh;
+    transition: .1s ease-in-out;
+    text-align: center;
+    line-height: 4.2vh;
+    font-size: 2.3vh;
+    background-color: rgb(234, 234, 234);
+}
+
+.create-note:hover {
+    background-color: rgb(214, 214, 214);
+    transition: .1s ease-in-out;
+}
+
+.create-note:hover .test-icon {
+    transition: .1s ease-in-out;
+    animation: Shake 1s infinite;
+}
+
+.new-note {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: #f2f2f2;
+    overflow: hidden;
+    left: -30vh;
+}
+
+.new-note-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(234, 234, 234);
+}
+
+.new-note-footer-item {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.2vh;
+    transition: .1s linear;
+    color: rgb(48, 48, 48);
+}
+
+.new-note-footer-item:hover {
+    background-color: rgb(214, 214, 214);
+    transition: .1s linear;
+}
+
+.new-note-footer-item:hover .new-note-icon {
+    color: rgb(32, 32, 32);
+    animation: Shake 1s infinite;
+}
+
+.new-note-header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+}
+
+#new-note-header-text {
+    position: absolute;
+    top: 5vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: black;
+}
+
+.new-note-textarea, #note-render-content {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15vh;
+    height: 30vh;
+    width: 80%;
+    outline: none;
+    border: none;
+    resize: none;
+    /* border-radius: 1.5vh 1.5vh 1.5vh 1.5vh; */
+    box-shadow: 0px 0 1px .5px rgba(0, 0, 0, 0.233);
+    padding: 1.5vh;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: 0.5vh solid #000;
+    transition: .1s linear;
+}
+
+div#note-render-content {
+    overflow-wrap: break-word;
+    top: 10vh;
+    height: 41.8vh;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#note-render-content img {
+    width: 100%;
+}
+
+.new-note-textarea:focus, .new-note-title:focus {
+    border-bottom: 0.5vh solid #797979;
+}
+
+.new-note-title {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10vh;
+    height: 2vh;
+    width: 80%;
+    outline: none;
+    border: none;
+    resize: none;
+    /* border-radius: 1.5vh 1.5vh 1.5vh 1.5vh; */
+    box-shadow: 0px 0 1px .5px rgba(0, 0, 0, 0.233);
+    padding: 1.5vh;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: 0.5vh solid #000;
+    transition: .1s linear;
+}
+
+.new-note-textarea:valid, .new-note-title:valid {
+    border-bottom: 0.5vh solid #29b417;
+}
+
+.note-home {
+    position: relative;
+    left: 0;
+}
+
+.note i.fas {
+    margin: 0 5px;
+    font-size: 1.5vh;
+    display: inline;
+    transition: 0.3s;
+}
+
+.note i.fas:hover {
+    color: #999;
+}
+
+.note-del-confirm {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: #f2f2f2;
+    overflow: hidden;
+    left: -30vh;
+}
+
+.note-del-confirm-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(234, 234, 234);
+}
+
+.note-del-confirm-footer-item {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.2vh;
+    transition: .1s linear;
+    color: rgb(48, 48, 48);
+}
+
+.note-del-confirm-footer-item:hover {
+    background-color: rgb(214, 214, 214);
+    transition: .1s linear;
+}
+
+.note-del-confirm-footer-item:hover .note-del-confirm-icon {
+    color: rgb(32, 32, 32);
+    animation: Shake 1s infinite;
+}
+
+.note-del-confirm-header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+}
+
+#note-del-confirm-header-text {
+    position: absolute;
+    top: 5vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: black;
+}
+
+.note table {
+    width: 100%;
+}

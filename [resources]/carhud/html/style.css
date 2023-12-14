@@ -1,0 +1,78 @@
+@font-face {
+	font-family: GtaUi;
+	src: url(gta-ui.ttf);
+}
+
+span {
+	font-size: 48px;
+}
+#carUi {
+    position: absolute;
+	bottom: 2%;
+    left: 2%;
+}
+#carUi.is-in-car {
+	bottom: 25px;
+    left: 17.5%;
+}
+#location {
+	font-size: 36px;
+}
+.ui-warn {
+    color: rgb(255, 96, 96);
+}
+#seatbelt.on, #cruise.on {
+    color: rgb(96, 255, 96);
+}
+#seatbelt, #cruise {
+    color: rgb(255, 96, 96);
+}
+.row {
+	width: 100%;
+	display: inline-block;
+}
+.row div {
+	float: left;
+	padding-right: 20px;
+}
+#time-container #time {
+	width: 40px;
+	float: left;
+}
+#time-container span {
+	font-size: 20px;
+
+}
+.container {
+	position: relative;
+}
+.row-2 .container span:nth-child(1) {
+	width: 75px;
+	float: left;
+}
+.row-1 .container span:nth-child(1) {
+	width: 100px;
+	float: left;
+}
+.row-2 .container span.label, .row-1 .container span.label {
+	float: left;
+	font-size: 20px;
+	display: block;
+	position: absolute;
+	bottom: 6px;
+	left: 50px;
+}
+.row-1 .container span.label {
+	float: left;
+	font-size: 20px;
+	display: block;
+	position: absolute;
+	bottom: 6px;
+	left: 70px;
+}
+body {
+	color: white;
+	font-family: GtaUi;
+	font-size: 20px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}

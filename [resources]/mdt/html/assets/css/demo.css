@@ -1,0 +1,140 @@
+.tim-typo{
+  padding-left: 25%;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+.tim-typo .tim-note{
+  bottom: 5px;
+  color: #c0c1c2;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  left: 0;
+  margin-left: 20px;
+  position: absolute;
+  width: 260px;
+}
+
+.card.card-markers {
+    float: left;
+    transform: scale(0.7);
+    margin: 0 10px 0 0;
+    width: 3em;
+}
+
+.card.card-markers [class*=card-header-] .card-icon {
+    margin-top: 0;
+}
+
+.table-markers {
+    padding: 0;
+}
+
+.table-licenses i {
+    padding-top: 8px;
+}
+
+.card .card-footer .card-header.card-header-icon i, .card .card-footer .card-header.card-header-text i {
+    font-size: 24px;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.card-header.card-header-icon .card-icon button {
+    width: 28px;
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+    position: absolute;
+    top: 42px;
+    left: 64px;
+    box-shadow: -2px -1px 5px 0px #000000 !important;
+}
+
+.card-header.card-header-icon .card-icon button i {
+    font-size: 24px;
+    padding: 0px;
+    width: 24px;
+    line-height: 24px;
+    height: 24px;
+}
+
+.card-footer.table-responsive {
+    width: calc(100% - 30px);
+}
+
+.modal-min-max {
+    float: right;
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+.modal-min-max i {
+    font-size: 24px;
+}
+
+.modal-min-max:focus {
+    outline: none;
+}
+
+.mat-list .crime-category.mat-list-item {
+    height: auto;
+}
+
+.mat-list .crime-category.mat-list-item > .mat-list-item-content {
+    display: block;
+}
+
+.mat-list .mat-list {
+    padding: 0;
+}
+
+.crime-category {
+    padding-top: 5px !important;
+}
+
+.mat-list-base .mat-list-item.crime-row {
+    height: 32px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #999;
+}
+
+.hidden {
+    display: none;
+}
+
+.dark-edition .popover {
+    display: inline-table;
+}
+
+.dark-edition .popover-body {
+    display: inline-block;
+}
+
+body.dark-edition {
+    background-color: rgba(26, 32, 53, 0.92) !important;
+}
+
+body.dark-edition tr:hover {
+    color: inherit !important;
+}

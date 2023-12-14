@@ -1,0 +1,39 @@
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="display: none;">
+    <div id="carUi">
+		<div class="row row-2">
+			<div id="speed-container" class="in-car container">
+				<span id="speed"></span>
+				<span class="label">MPH</span>
+			</div>
+			<div id="fuel-container" class="in-car container">
+				<span id="fuel"></span>
+				<span class="label">FUEL</span>
+			</div>
+		</div>
+		<div class="row row-1">
+			<div id="altitude-container" class="in-heli container">
+				<span id="altitude"></span>
+				<span class="label">FT <br/><small>(GROUND)</small></span>
+			</div>
+			<div id="altitude-container" class="in-heli container">
+				<span id="altitudeSea"></span>
+				<span class="label">FT <br/><small>(SEA)</small></span>
+			</div>
+		</div>
+		<div class="row row-3">
+			<div id="time-container" class="container">
+				<span id="time"></span>
+				<span class="label"></span>
+			</div>
+			<div id="seatbelt" class="in-car">SEATBELT</div>
+			<div id="cruise" class="in-car">LIMIT</div>
+		</div>
+        <div id="location"></div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
